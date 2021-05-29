@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="ru" class="h-100">
+<head>
+    <title>Blast RP - GTA CRMP на телефоне Android</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="crmp,blast,RP,RolePlay,role play,android,gta,крмп на андроид,крмп на телефон" />
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="assets/images/favicon.png@r=1" type="image/png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+        <style>
+        .target {
+            position: relative;
+            cursor: pointer;
+            text-decoration: underline !important;
+        }
+        /*.target::before {
+            content: "";
+            font-size: 10px;
+            display: block;
+            text-align: center;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            background-image: url(/assets/images/finger.png);
+            background-size: 100%;
+            background-position: center;
+            /* top: -8px; */
+            bottom: -6px;
+            transform: rotate(-27deg);
+            right: 0;
+            opacity: 0.7;
+        }
+        */
+    </style>
+    </head>
+<body class="d-flex flex-column h-100">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo"></div>
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item  active ">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="donate.html">Магазин</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-scroll"  href="index.html#howtoplay" >С чего начать?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://forum-blast.tk">Форум</a>
+                    </li>
+                </ul>
+                <a href="index.html#" class="social-btn">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://vk.com/blastcrmp" class="social-btn">
+                    <i class="fab fa-vk"></i>
+                </a>
+                                <a href="login.html" class="login-profile-btn">
+                    Личный кабинет
+                </a>
+                            </div>
+        </div>
+    </nav>
+
+        <div class="promo">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-5">
+                    <h1>Настало время играть в CRMP на Blast RP</h1>
+
+                    <p>
+                        Устал от однотипных серверов?<br>
+                        Представляем вашему вниманию Blast Role Play!<br> 
+                        У нас вы сможете играть с мобильного устройства (android).<br> 
+                        	Преимущества: <br>
+                        - Качественный мод.<br>
+                        - Отзывчивая администрация, которая поможет в любых ситуациях.
+                    </p>
+
+                    <a   href="index.html#howtoplay"  class="btn btn-how nav-scroll">
+                        Как начать играть?
+                    </a>
+                </div>
+                <div class="col-lg-7 position-relative h-100 d-none d-lg-block">
+                    <a id = "video_target" rel="nofollow" class="pulse-btn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+<main>
+
+    <div class="home">
+    <div class="container">
+        <div class="monitor row align-items-center">
+            <div class="col-lg-3">
+                <h3>Подключайся к нашим серверам!</h3>
+            </div>
+            <div class="col-lg-3">
+                <div class="server">
+                    <div class="number">
+                        <b>RP</b>
+                    </div>
+                    <div class="info">
+                        <p>
+                            Blast RP <b></b>
+                        </p>
+                        <div class="online-status">
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 0%;" data-percents="62.993197278912"></div>
+                            </div>
+                            <span class="online"><b data-value="1852">0</b>/ 2940</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="server">
+                    <div class="number">
+                        <b>Bonus</b>
+                    </div>
+                    <div class="info">
+                        <p>
+                            Blast Bonus <b></b>
+                        </p>
+                        <div class="online-status">
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 0%;" data-percents="51.25"></div>
+                            </div>
+                            <span class="online"><b data-value="205">0</b>/ 400</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="play-instructions" id="howtoplay">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title"></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 play-instruction wow fadeInLeft">
+                    <div class="block">
+                        <h3>Скачайте наш лаунчер и установите его</h3>
+                        <p>
+                            <!-- Затем его распаковываете в <b>"Android/obb/"</b>.
+                            (Должно получится так:
+                            <b>"Android/obb/com.rockstargames.gtasa/"</b>) -->
+                        </p><a href="mordor-launcher.apk" target="_blank" class="btn">
+                            <div class="icon"><i class="fas fa-download"></i></div>
+                            Скачать
+                        </a>
+                        <small style="color: white;margin: 5px;">или</small>
+                        <a href="https://drive.google.com/file/d/1F7_P0aQ2J26hntyGLWLay415H2-dJ_pG/view" target="_blank" class="" style="
+                            color: #f71c52;
+                            /* text-decoration: underline; */
+                            font-size: 13px;
+                            padding: 4px 10px;
+                            background: white;
+                            border-radius: 11px;
+                            width: max-content;
+                        ">Google Disc</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 play-instruction wow fadeInRight">
+                    <div class="block">
+                        <h3>Установка файлов игры</h3>
+                        <p>
+                            Заходим в лаунчер и ожидаем установку <br>
+                            После установки смените ник-нейм нажав на пункт <a id="" class="target"><b>Сменить ник</b></a> в лаунчере
+                        </p>
+                        <!-- <a href="https://drive.google.com/file/d/1oz1WLgPjuNF-oI-9q3vVrTCU1u1FLSJg/view" target="_blank" class="btn">
+                            <div class="icon"><i class="fas fa-download"></i></div>
+                            Скачать
+                        </a> -->
+                    </div>
+                </div>
+                <div class="col-lg-12 play-instruction wow fadeInUp">
+                    <div class="block">
+                        <h3>Начните игру на Blast RP</h3>
+                        <p>
+                            Запустите приложение <a id="" class="target"><b>Blast RP</b></a> и подождите <br>
+                            Потом выберите сервер. <br>
+                            И поздравляем вы в игре.
+                            
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center">
+                    <a id = "video_target2" rel="nofollow" class="btn btn-video">
+                        Видео инструкция
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reasons">
+        <div class="container h-100">
+            <div class="row h-100 align-items-end">
+                <div class="col-12">
+                    <h3>Причины поиграть у нас</h3>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="reason">
+                        <div class="icon">
+                            <i class="fas fa-toilet"></i>
+                        </div>
+
+                        <p>Играй где угодно!</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="reason">
+                        <div class="icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+
+                        <p>Играй с друзьями</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="reason">
+                        <div class="icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+
+                        <p>Получай обновления</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="reason">
+                        <div class="icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <p>Используй лучшие системы</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="socials">
+        <div class="container">
+            <div class="row justify-content-center align-items-end">
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="man-block"></div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="links h-100">
+                        <div class="link yt">
+                            <div class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <h4>Наш YouTube канал</h4>
+                            <a href="index.html#" rel="nofollow" class="ml-auto">Подписаться</a>
+                        </div>
+                        <div class="link vk">
+                            <div class="icon">
+                                <i class="fab fa-vk"></i>
+                            </div>
+                            <h4>Сообщество ВКонтакте</h4>
+                            <a href="https://vk.com/mordormobile" rel="nofollow" class="ml-auto">Подписаться</a>
+                        </div>
+                        <div class="link discord">
+                            <div class="icon">
+                                <i class="fab fa-discord"></i>
+                            </div>
+                            <h4>Канал Discord</h4>
+                            <a href="https://discord.gg/XuqPFEr" rel="nofollow" class="ml-auto">Подписаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+<footer class="mt-auto">
+    <div class="footer-content">
+        <div class="container">
+            <nav class="d-flex">
+                <div class="logo"></div>
+
+                <ul class="ml-auto navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#" class="nav-link">Форум</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  href="index.html#howtoplay"  class="nav-link nav-scroll">Начать играть</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#" class="nav-link pink">Договор Офферты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="donate.html" class="nav-link">Донат</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Личный кабинет</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+                <p class="mr-auto d-none d-lg-block"></p>
+                <p class="mx-auto">Все права защищены &copy; Blast RP 2021</p>
+                <p class="ml-auto mr-auto mr-lg-0"><a href="https://servers-samp.ru/server-6272" title="Servers-Samp - Серверы GTA SAMP"><img src="https://servers-samp.ru/banner-6272-5.png" title="Servers-Samp.ru - Серверы GTA SAMP" alt="Mordor Role Play [Mobile]" /></a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="assets/js/clipboard.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/common.js"></script>
+
+<script>
+    function aboutRulette() {
+        alert("Выигранный приз Вы можете забрать в игре через /mm -> Другое -> Рулетка");
+    }
+</script>
+
+<script type="application/ld+json">
+{
+  "@context" : "https://schema.org",
+  "@type" : "Organization",
+  "name" : "Blast RP",
+  "url" : "https://blast.tk",
+  "sameAs" : [
+    "https://vk.com/blastcrmp"
+  ]
+}
+</script>
+
+<script>
+    $("#target1").click(function() {
+        $(".modal1").modal("show");
+    });
+    $("#target2").click(function() {
+        $(".modal2").modal("show");
+    });
+    $("#target3").click(function() {
+        $(".modal3").modal("show");
+    });
+    $("#target4").click(function() {
+        $(".modal4").modal("show");
+    });
+    $("#target5").click(function() {
+        $(".modal5").modal("show");
+    });
+    $("#video_target").click(function() {
+        $(".modal6").modal("show");
+    });
+    $("#video_target2").click(function() {
+        $(".modal7").modal("show");
+    });
+</script>
+<div></div>
+<div class="modal fade bd-example-modal-md modal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <img style = "width: 100%" src="assets/images/download_client.jpg">
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-md modal2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <img style = "width: 100%" src="assets/images/change_name.jpg">
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-md modal3" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <img style = "width: 100%" src="assets/images/mordor-rp.jpg">
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-md modal4" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <img style = "width: 100%" src="assets/images/offline.jpg">
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-md modal5" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <img style = "width: 100%" src="assets/images/multiplayer.jpg">
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-lg modal6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <iframe id="ytplayer" type="text/html" width="100%" height="500" src="https://www.youtube.com/embed/ov1ndOxW8sA?autoplay=0" frameborder="0"/></iframe>
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-lg modal7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <iframe id="ytplayer" type="text/html" width="100%" height="500" src="https://www.youtube.com/embed/MiMokjS7vm0?autoplay=0" frameborder="0"/></iframe>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
